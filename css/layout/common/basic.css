@@ -171,6 +171,7 @@ button {
 }
 .btn:hover {
   transition: all 0.3s ease;
+  transform: scaleX(1.1) scaleY(1.1);
   box-shadow: 0 0 8px var(--border-color);
 }
 .btn:hover {

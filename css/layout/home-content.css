@@ -129,6 +129,7 @@
 }
 .home-content-container .home-article-list .home-article-item:hover {
   transition: all 0.3s ease;
+  transform: scaleX(1.02) scaleY(1.02);
   box-shadow: 0 0 8px var(--border-color);
 }
 @media (max-width: 760px) {
@@ -141,6 +142,7 @@
   }
   .home-content-container .home-article-list .home-article-item:hover {
     transition: all 0.3s ease;
+    transform: scaleX(1.01) scaleY(1.01);
     box-shadow: 0 0 8px var(--border-color);
   }
 }

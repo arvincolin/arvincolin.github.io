@@ -79,6 +79,7 @@ ils-tablet()
 }
 .about-container:hover {
   transition: all 0.3s ease;
+  transform: scaleX(1.005) scaleY(1.01);
   box-shadow: 0 0 8px var(--border-color);
 }
 .about-container .about-content {
