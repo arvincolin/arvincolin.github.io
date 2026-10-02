@@ -3906,3 +3906,8 @@ pre .javascript .function {
   padding: 0 2px;
   line-height: 1.8em;
 }
+/* 文章正文段落首行缩进2个汉字 */
+.article-content p {
+  text-indent: 2em;
+  text-align: justify;
+}
