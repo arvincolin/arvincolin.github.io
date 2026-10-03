@@ -3911,3 +3911,33 @@ pre .javascript .function {
   text-indent: 2em;
   text-align: justify;
 }
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+.category-list li {
+  margin: 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #eee;
+}
+.category-list li a {
+  text-decoration: none;
+}
+.category-list li a:hover {
+  color: #409eff;
+}
+.category-list-count {
+  margin-left: 8px;
+  opacity: 0.5;
+  font-size: 0.9em;
+}
+.tag-cloud {
+  margin-top: 16px;
+  line-height: 2;
+}
+.tag-cloud a {
+  display: inline-block;
+  margin: 4px 10px;
+  text-decoration: none;
+}
