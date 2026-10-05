@@ -1,0 +1,13 @@
+/* 文章正文所有段落首行缩进 */
+.post-content p {
+  text-indent: 2em;
+}
+
+/* 排除不需要缩进的元素 */
+.post-content blockquote p,
+.post-content li p,
+.post-content table p,
+.post-content pre p,
+.post-content .highlight p {
+  text-indent: 0;
+}
