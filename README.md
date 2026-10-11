@@ -27,4 +27,4 @@ hexo clean && hexo deploy
 
 执行完成后，等待 1-3 分钟再刷新
 
-**日常使用中，90% 的场景只需要 `hexo s`（本地写）和 `hexo clean && hexo d`（发布上线）这两个组合即可。**
+**日常写博客的标准工作流程是 `hexo new` 写文章 → `hexo s` 本地预览 → 提交源码到 GitHub main 分支 → `hexo clean && hexo g -d` 发布。遇到"改了没反应"，先 `hexo clean` 再说。**
