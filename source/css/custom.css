@@ -11,3 +11,87 @@
 .post-content .highlight p {
   text-indent: 0;
 }
+
+/* ============================================================
+   中文排版修复：只覆盖文本内容，不碰图标
+   ============================================================ */
+
+/* 1. 正文区域使用中文黑体，覆盖主题默认的西文字体栈 */
+.post-content,
+article,
+.markdown-body,
+.content,
+.page-content,
+.site-main {
+  font-family: "Noto Sans SC",
+               "PingFang SC",
+               "Hiragino Sans GB",
+               "Microsoft YaHei",
+               sans-serif !important;
+}
+
+/* 2. 标题区域同理 */
+:lang(zh) h1,
+:lang(zh) h2,
+:lang(zh) h3,
+:lang(zh) h4,
+:lang(zh) h5,
+:lang(zh) h6 {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+}
+
+/* ============================================================
+   图标字体修复：明确指定 Font Awesome 6 字体名称
+   （不能写 inherit，必须写死图标字体的名字）
+   ============================================================ */
+
+/* 所有 Font Awesome 图标元素 */
+.fas, .far, .fab, .fal, .fa {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+/* Solid 风格（实心图标）：需要加粗才能出字形 */
+.fas {
+  font-weight: 900 !important;
+}
+
+/* Regular 风格（线框图标）：正常字重 */
+.far {
+  font-weight: 400 !important;
+}
+
+/* Brands 风格（品牌 logo）：独立字体族 */
+.fab {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
+}
+
+/* 兜底：匹配所有包含 fa- 的 class（如 fa-home、fa-archive） */
+[class*="fa-"] {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+/* 如果主题用了 <i class="iconfont"> 这类自定图标 */
+.iconfont,
+[class*="iconfont"] {
+  font-family: "iconfont" !important;
+}
+
+/* ============================================================
+   关闭可能影响标点宽度的排版特性
+   ============================================================ */
+
+* {
+  text-spacing-trim: normal !important;
+  font-feature-settings: normal !important;
+  font-variant-ligatures: normal !important;
+}
+
+/* ============================================================
+   代码块保持等宽字体
+   ============================================================ */
+
+pre, code, kbd, samp {
+  font-family: Consolas, Monaco, "Courier New", monospace !important;
+}
