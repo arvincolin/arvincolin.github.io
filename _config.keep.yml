@@ -114,7 +114,7 @@ home:
   tag: true                # Option values: true | false
 
   # Set the datetime type of home page post block  文章底部日期时间
-  post_datetime:     # Option values: updated | created   更新时间 / 创建时间
+  post_datetime: updated    # Option values: updated | created   更新时间 / 创建时间
 
 
 # ---------------------------------------------------------------------------------------
