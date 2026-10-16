@@ -59,141 +59,562 @@
 
 
 <body>
-.page-container {
-  width: 100%;
-  height: auto;
-  background: var(--background-color-1);
-}
-.page-container .page-main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  padding-top: var(--header-height);
-keep-tablet()
-keep-mobile()
-}
-.page-container .page-main-content.is-home .transparent-1 {
-  background: var(--header-transparent-background-1);
-  -webkit-backdrop-filter: blur(var(--header-backdrop-filter-blur));
-  backdrop-filter: blur(var(--header-backdrop-filter-blur));
-}
-.page-container .page-main-content.is-home .transparent-2 {
-  background: var(--header-transparent-background-2);
-  -webkit-backdrop-filter: blur(calc(var(--header-backdrop-filter-blur) * 1.25));
-  backdrop-filter: blur(calc(var(--header-backdrop-filter-blur) * 1.25));
-}
-.header-shrink .page-container .page-main-content {
-  padding-top: var(--header-shrink-height);
-keep-tablet()
-keep-mobile()
-}
-.page-container .page-main-content .page-main-content-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: $z-index-5;
-  box-sizing: border-box;
-  width: 100%;
-  height: var(--header-height);
-keep-tablet()
-keep-mobile()
-}
-.page-container .page-main-content .page-main-content-top.hide {
-  transform: translateY(-105%);
-}
-.header-shrink .page-container .page-main-content .page-main-content-top {
-  height: var(--header-shrink-height);
-keep-tablet()
-keep-mobile()
-}
-.page-container .page-main-content .page-main-content-top.reset-color .header-content .site-name {
-  color: var(--text-color-1) !important;
-}
-.page-container .page-main-content .page-main-content-top.reset-color .header-content .menu-item a {
-  color: var(--text-color-3) !important;
-}
-.page-container .page-main-content .page-main-content-top.reset-color .header-content .menu-item a:hover {
-  color: var(--primary-color) !important;
-}
-.page-container .page-main-content .page-main-content-top.reset-color .header-content .menu-item i.search {
-  color: var(--text-color-3) !important;
-}
-.page-container .page-main-content .page-main-content-middle {
-  z-index: $z-index-2;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: var(--component-gap) 0;
-keep-tablet()
-keep-mobile()
-}
-.page-container .page-main-content .page-main-content-middle .main-content {
-  width: var(--page-content-width);
-  max-width: var(--page-content-max-width);
-  height: 100%;
-keep-tablet()
-keep-mobile()
-}
-.has-toc .page-container .page-main-content .page-main-content-middle .main-content {
-  max-width: var(--page-content-max-width-2);
-}
-.page-container .page-main-content .page-main-content-bottom {
-  width: 100%;
-}
-.page-container .post-tools {
-  position: fixed;
-  top: calc(var(--header-height) + var(--component-gap));
-  z-index: $z-index-3;
-  box-sizing: border-box;
-  opacity: 0;
-keep-tablet()
-}
-.page-container .post-tools.right-toc {
-  left: calc((100vw - var(--page-content-max-width) / 2) - 5rem);
-}
-.page-container .post-tools.left-toc {
-  right: calc((100vw - var(--page-content-max-width) / 2) - 5rem);
-}
-.header-shrink .page-container .post-tools {
-  top: calc(var(--header-shrink-height) + var(--component-gap));
-}
-.page-container .side-tools {
-  position: fixed;
-  right: 0;
-  bottom: 1.6rem;
-  z-index: $z-index-3;
-  box-sizing: border-box;
-  padding-right: 1rem;
-keep-tablet()
-}
-.page-container .side-tools:hover .side-tools-container {
-  transform: translateX(0);
-  opacity: 1;
-}
-.page-container .tablet-post-toc-mask {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: $z-index-10;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0);
-  visibility: hidden;
-}
-.page-container .tablet-post-toc-mask .tablet-post-toc {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  width: 22rem;
-  height: 100%;
-  padding: 1.2rem 1rem;
-  background: var(--background-color-1);
-  transform: translateX(-100%);
-keep-mobile()
-}
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               流浪的天空
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                
+                                分类
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                </span>
+                            
+                            分类
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        多情自古伤离别
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/avatar.svg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">流云经天</span>
+                                
+                                    <span class="author-badge">炼气</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2026-10-02 23:15:47</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Tue Oct 06 2026 22:03:31 GMT+0800">2026-10-06 22:03:31</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E6%96%87%E5%AD%A6/">文学</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8F%A4%E8%AF%97%E8%AF%8D/">古诗词</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%A6%BB%E5%88%AB/">离别</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1.2k 字</span>
+            </span>
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <p>读古诗词，翻不了几页，就会撞见一场离别。渡口，长亭，月下，灯前，有人折柳，有人把酒，有的人话还没出口，眼泪先掉了下来。柳永一句“多情自古伤离别”，本是自己的心事，说出口，却像替所有人做了总结。</p>
+<p>韦庄的《女冠子》，写一个女子回忆去年送别：“四月十七，正是去年今日，别君时。忍泪佯低面，含羞半敛眉。不知魂已断，空有梦相随。除却天边月，没人知。”眼泪涌上来，偏要忍住，假装低头；舍不得，又害羞，眉头只皱着一半。一个“佯”字，一个“半”字，想留不敢留、想哭不肯哭的样子，就出来了。人走以后，魂断了，话没处说，只能托给梦，梦又是空的。抬头看见月亮，觉得只有它知道——月亮知道什么呢，它什么也不说。</p>
+<p>牛希济的《生查子》，写天快亮时的分别：“语已多，情未了，回首犹重道：记得绿罗裙，处处怜芳草。”话说了一整夜，情还没尽。人走出去几步，又回过头叮嘱：看见芳草，就想想我这条绿罗裙。真到别离，人是会变啰嗦的，明知说了没用，还要再说一遍。裙子是绿的，草也是绿的，这一牵线，等于说：你走到哪里，哪里的草都替我陪着你。</p>
+<p>柳永的《雨霖铃》更绝：“执手相看泪眼，竟无语凝噎。”韦庄笔下的人憋着不说，牛希济笔下的人说个没完，到了柳永这儿，是一个字也说不出。手拉着手，眼眶通红，喉咙像叫什么堵住了。人在大悲的当口，语言先垮掉。苏轼后来写“相顾无言，惟有泪千行”，一个路数，不过那是死别，连等都不必等了。</p>
+<p>李清照写别后的相思：“莫道不销魂，帘卷西风，人比黄花瘦。”看不见的相思，让她写成了看得见的瘦。西风一卷帘子，人站在那儿，比篱边的菊花还清瘦。不喊疼，不叫苦，憔悴都在一个“比”字里。这样的句子还多，“相见时难别亦难”也好，“过尽千帆皆不是”也好，古人从不大声喊难过，只写你低头、回头、说不出话、一天天瘦下去的样子，再把月亮、芳草、西风轻轻摆到你旁边。心事藏在动作里，读的人自然懂。</p>
+<p>今天再读这些，有时会觉得隔了一层。想谁了，一个视频电话拨过去，脸对着脸说话；早上还在武汉，中午人已到了千里之外。离别仿佛叫高铁、飞机和手机磨钝了。古人的日子，不是这样。</p>
+<p>那时出门，靠船，靠马，靠两条腿，几千里路走几个月，遇上风浪盗贼，能不能平安到，都难说。长亭喝杯酒，折一枝柳，“柳”就是“留”，明知道留不住。这一走，信能不能到，人能不能回，谁心里也没底。一场平平常常的分别，底下压着的，可能就是后会无期。</p>
+<p>那时候的人，还常常不得不走。读书人要游学、赶考、做官，一纸调令下来，即刻动身；寻常百姓遇上征兵、戍边、徭役，说走就走，连好好送一程都来不及。再加上战乱和灾荒，杜甫笔下那对老夫妇，夜里差役上门，人被抓走，连告别都没有。</p>
+<p>心里的话，也没处去。礼教森严，丈夫出门三年五年，音信全无，相思写下来寄不出，只好说给月亮和大雁听。如今掏出手机就能说，说出口，心里就轻了；古人的相思在肚子里反复酿，越酿越浓。而那些最会写字的人，自己又多半走在贬谪的路上，韩愈、苏轼，越贬越远，心事落到纸上，就成了诗词。</p>
+<p>不是古人更多情。是他们的日子，把别离推到每个人面前，躲也躲不开。今人的情绪有无数个出口，古人的情绪，常常只有诗这一条窄路。路窄，走的人多，千年以后回头看，脚印还在。</p>
+<p>现在送人，不折柳了。高铁站检票口前挥一挥手，人就走进了人群。技术解决了距离，解决不了心里那点空。月亮还是当年那轮月亮，照着古人，也照着我们。读着这些诗，会忽然觉得，自己那点心事，并不孤单。</p>
+<p>“多情自古伤离别”，这话里没有抱怨，也没有悔恨，只是认清了一件事：只要还肯动心，就免不了为离别伤神。可一代又一代的人，宁可伤神，也还是要多情。</p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%8F%A4%E8%AF%97%E8%AF%8D/">古诗词</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E7%A6%BB%E5%88%AB/">离别</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/c6c0/"
+                                   title="从城濮到长平：两场大战，两个时代"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">从城濮到长平：两场大战，两个时代</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/bedf/"
+                                   title="缘起"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">缘起</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2026
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">流云经天</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+                <a target="_blank" rel="nofollow" href="https://github.com/">
+            
+            本站由 <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/brands/github.png"></span> 提供部署服务
+            
+                </a>
+            
+        </div>
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
 
 
 
