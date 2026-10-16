@@ -95,3 +95,8 @@ article,
 pre, code, kbd, samp {
   font-family: Consolas, Monaco, "Courier New", monospace !important;
 }
+
+:root {
+  /* 全局基础字体大小，根据阅读喜好调整数值 */
+  --base-font-size: 16px;
+}
