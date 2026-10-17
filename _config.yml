@@ -113,3 +113,12 @@ abbrlink:
   rep: hex    # 进制可选 dec / hex
   force: false   #是否强制重新生成所有文章的短码
   writeback: true   #是否将生成的短码回写到文章 md 文件的 Front-matter 中
+
+# RSS 订阅源配置
+feed:
+  type: atom            # 订阅源格式，可选 atom / rss2，推荐 atom 兼容性更好
+  path: atom.xml        # 生成的文件路径，默认 atom.xml，访问地址为 你的域名/atom.xml
+  limit: 20             # 订阅源包含的最新文章数量，建议 10~20 篇
+  content: false        # 是否输出全文；false 仅输出摘要，true 输出完整正文
+  content_limit: 140    # 摘要模式下的输出字符数，仅 content: false 时生效
+  order_by: -date       # 排序规则，-date 按发布时间倒序（最新文章在前）
