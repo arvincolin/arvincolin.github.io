@@ -113,11 +113,3 @@ abbrlink:
   rep: hex    # 进制可选 dec / hex
   force: false   #是否强制重新生成所有文章的短码
   writeback: true   #是否将生成的短码回写到文章 md 文件的 Front-matter 中
-
-# Search
-## https://github.com/theme-next/hexo-generator-searchdb
-search:
-  path: search.json
-  field: post
-  content: true
-  format: striptags
