@@ -48,7 +48,7 @@ menu:
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/first_screen.html
 # ---------------------------------------------------------------------------------------
-first_screen:            #首屏
+first_screen:            # 首屏
   enable: false  # Option values: true | false
 
   # First screen background image in light mode, You can use local image path or image link
@@ -89,7 +89,7 @@ social_contact:
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/scroll.html
 # ---------------------------------------------------------------------------------------
-scroll:            #页面滚动样式
+scroll:                  # 页面滚动样式
   # Show progress bar in top when page scroll
   progress_bar: true  # Option values: true | false
 
@@ -105,7 +105,7 @@ scroll:            #页面滚动样式
 # ---------------------------------------------------------------------------------------
 home:
   # Website announcement in home page   
-  announcement:            #公告信息
+  announcement:          # 公告信息
 
   # Show category in home page post block
   category: true           # Option values: true | false
@@ -148,7 +148,7 @@ post:
   # Post share
   share: false           # Option values: true | false    分享
 
-  # Reward author    打赏作者
+  # Reward author        打赏作者
   reward:
     enable: false        # Option values: true | false
     img_link:            # Image link for the payment QR code
@@ -159,7 +159,7 @@ post:
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/code_block.html
 # ---------------------------------------------------------------------------------------
-code_block:                  #代码块工具 和 设置代码高亮主题
+code_block:              # 代码块工具 和 设置代码高亮主题
   # Toolbar include: "code copy", "code block collapse" and "code language"
   tools:
     enable: true             # Option values: true | false
@@ -170,7 +170,7 @@ code_block:                  #代码块工具 和 设置代码高亮主题
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/toc.html
 # ---------------------------------------------------------------------------------------
-toc:                #文章目录
+toc:                     # 文章目录
   enable: true      # Option values: true | false
 
   # Automatically add list number to toc
@@ -189,7 +189,7 @@ toc:                #文章目录
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/website_count.html
 # ---------------------------------------------------------------------------------------
-website_count:       #网站计数功能
+website_count:           # 网站计数功能
   # busuanzi
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
@@ -204,7 +204,7 @@ website_count:       #网站计数功能
 # Depend on Hexo Plugin: hexo-generator-searchdb (`npm install hexo-generator-searchdb`)
 # See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
-local_search:    #站内搜索
+local_search:            # 站内搜索
   enable: true   # Option values: true | false
   preload: true  # Preload the search data when the page loads. Option values: true | false
 
@@ -212,7 +212,7 @@ local_search:    #站内搜索
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/comment.html
 # ---------------------------------------------------------------------------------------
-comment:          #评论系统
+comment:                # 评论系统
   enable: false   # Option values: true | false
   use: valine     # Option values: valine | gitalk | twikoo | waline | giscus | artalk | disqus
 
@@ -280,21 +280,21 @@ comment:          #评论系统
 # Depend on Hexo Plugin: hexo-generator-feed (`npm install hexo-generator-feed`)
 # See: https://github.com/hexojs/hexo-generator-feed
 # ---------------------------------------------------------------------------------------
-rss:             #订阅功能
+rss:                    # 订阅功能
   enable: true  # Option values: true | false
 
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/lazyload.html
 # ---------------------------------------------------------------------------------------
-lazyload:        #图片的懒加载功能
+lazyload:               # 图片的懒加载功能
   enable: false  # Option values: true | false
 
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/cdn.html
 # ---------------------------------------------------------------------------------------
-cdn:                 #CDN 加速
+cdn:                    # CDN 加速
   enable: true       # Option values: true | false
   provider: cdnjs     # Option values: cdnjs | jsdelivr | unpkg
   custom:
@@ -314,7 +314,7 @@ pjax:
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/footer.html
 # ---------------------------------------------------------------------------------------
-footer:              #网站底部信息展示
+footer:                   # 网站底部信息展示
   since:             # The starting year of your website, Can be null
   word_count: false      # Option values: true | false
 
@@ -338,7 +338,7 @@ footer:              #网站底部信息展示
 # ---------------------------------------------------------------------------------------
 # Docs: https:inject.html
 # ---------------------------------------------------------------------------------------
-inject:        #注入自定义的 CSS 和 JS 文件
+inject:                  # 注入自定义的 CSS 和 JS 文件
   enable: true   # Option values: true | false
   css:
     - /css/custom.css
