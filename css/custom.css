@@ -96,7 +96,18 @@ pre, code, kbd, samp {
   font-family: Consolas, Monaco, "Courier New", monospace !important;
 }
 
+/* ============================================================
+   Keep 主题自定义样式
+   作用：覆盖主题默认CSS变量，优化字体、排版与视觉效果
+   修改时间：2026-10-20
+   ============================================================ */
 :root {
-  /* 全局基础字体大小，根据阅读喜好调整数值 */
-  --base-font-size: 16px;
+  /* 全局基础字体大小 */
+  --base-font-size: 18px;     /* 推荐范围：14px ~ 18px */
+  /* 全局基础行高 */      
+  --base-line-height: 29px;     /* 推荐范围：1.5 ~ 1.8 倍字体大小 */
+  /* 内容区域的最大像素宽度 */
+  --page-content-max-width: 850px;     /* 纯文字博客推荐 800px ~ 900px */
+  /* 隐藏文章内容页面的文章修改时间 */
+  --post-update-datetime: none;     /* 可选值：flex（显示）、none（隐藏） */
 }
