@@ -38,8 +38,8 @@ menu:
   archives: /archives            || fa-solid fa-box-archive
   categories: /categories        || fa-solid fa-layer-group
   tags: /tags                    || fa-solid fa-tags
+  photos: /photos                || fa-solid fa-image
   # links: /links               # || fa-solid fa-link
-  # photos: /photos             # || fa-solid fa-image
   # tools: /tools               # || fa-solid fa-tools
   # about: /about               # || fa-solid fa-user-graduate
   # ......
@@ -288,7 +288,7 @@ rss:                    # 订阅功能
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/lazyload.html
 # ---------------------------------------------------------------------------------------
 lazyload:               # 图片的懒加载功能
-  enable: false  # Option values: true | false
+  enable: true  # Option values: true | false
 
 
 # ---------------------------------------------------------------------------------------
@@ -296,7 +296,7 @@ lazyload:               # 图片的懒加载功能
 # ---------------------------------------------------------------------------------------
 cdn:                    # CDN 加速
   enable: true       # Option values: true | false
-  provider: cdnjs     # Option values: cdnjs | jsdelivr | unpkg
+  provider: jsdelivr     # Option values: cdnjs | jsdelivr | unpkg
   custom:
     enable: false     # Option values: true | false
     url:              # Your custom cdn url, eg: https://cdn.com/npm/hexo-theme-keep
