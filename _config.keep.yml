@@ -105,7 +105,7 @@ scroll:                  # 页面滚动样式
 # ---------------------------------------------------------------------------------------
 home:
   # Website announcement in home page   
-  announcement:          # 公告信息
+  announcement: 本站于2026年9月27日晚开始筹建,2026年9月28日上午正式上线。  # 公告信息
 
   # Show category in home page post block
   category: true           # Option values: true | false
@@ -130,7 +130,7 @@ post:
     level_badge: false    # Option values: true | false    等级标识
 
     # Custom badge array, You can be fill one or more item   自定义标识
-    custom_badge: 炼气
+    custom_badge: 筑基
 
   # Post word count
   # Depend on Hexo Plugin: hexo-wordcount (`npm install hexo-wordcount`)
