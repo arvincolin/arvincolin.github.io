@@ -18,13 +18,13 @@ base_info:
   author: 流云经天
 
   # Author avatar, You can use local image path or image link
-  avatar: /images/avatar.svg
+  avatar: /images/avatar.webp
 
   # Website LOGO, You can use local image path or image link
-  logo: /images/logo.svg
+  logo: /images/logo.webp
 
   # Website favicon, You can use local image path or image link
-  favicon: /images/logo.svg
+  favicon: /images/logo.webp
 
 
 # ---------------------------------------------------------------------------------------
@@ -104,8 +104,8 @@ scroll:                  # 页面滚动样式
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/home.html
 # ---------------------------------------------------------------------------------------
 home:
-  # Website announcement in home page   
-  announcement: 本站于2026年9月27日晚开始筹建,2026年9月28日上午正式上线。  # 公告信息
+  # Website announcement in home page   本站于2026年9月27日晚开始筹建,2026年9月28日上午正式上线。
+  announcement:   # 公告信息
 
   # Show category in home page post block
   category: true           # Option values: true | false
