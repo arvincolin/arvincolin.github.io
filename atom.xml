@@ -10,7 +10,25 @@
   <rights>All rights reserved 2026, 流云经天</rights>
   <subtitle>记录学习与生活，主要发表跟文学、历史、哲学相关的科普类文章。</subtitle>
   <title>流浪的天空</title>
-  <updated>2026-10-26T00:22:50.461Z</updated>
+  <updated>2026-10-30T15:18:03.227Z</updated>
+  <entry>
+    <author>
+      <name>流云经天</name>
+    </author>
+    <category term="历史" scheme="https://arvincolin.github.io/categories/%E5%8E%86%E5%8F%B2/"/>
+    <category term="鸿门宴" scheme="https://arvincolin.github.io/tags/%E9%B8%BF%E9%97%A8%E5%AE%B4/"/>
+    <category term="刘邦" scheme="https://arvincolin.github.io/tags/%E5%88%98%E9%82%A6/"/>
+    <category term="项羽" scheme="https://arvincolin.github.io/tags/%E9%A1%B9%E7%BE%BD/"/>
+    <id>https://arvincolin.github.io/1f8d/</id>
+    <link href="https://arvincolin.github.io/1f8d/"/>
+    <published>2026-10-30T13:51:55.000Z</published>
+    <summary>
+      <![CDATA[<p>中国人请客花样多，但没有哪一顿饭比鸿门那顿更有名。菜单没人记得，座次、眼神、谁把生猪肉切着吃了，倒记得清楚。麻烦就在这儿：记得太清楚了。</p>
+<h2 id="一、两个主角"><a href="#一、两个主角" class="headerlink" title="一、两个]]>
+    </summary>
+    <title>鸿门宴始末</title>
+    <updated>2026-10-30T15:18:03.227Z</updated>
+  </entry>
   <entry>
     <author>
       <name>流云经天</name>
@@ -174,7 +192,8 @@
     </author>
     <category term="生活" scheme="https://arvincolin.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="建站" scheme="https://arvincolin.github.io/tags/%E5%BB%BA%E7%AB%99/"/>
-    <category term="hexo" scheme="https://arvincolin.github.io/tags/hexo/"/>
+    <category term="Hexo" scheme="https://arvincolin.github.io/tags/Hexo/"/>
+    <category term="GitHub" scheme="https://arvincolin.github.io/tags/GitHub/"/>
     <id>https://arvincolin.github.io/bedf/</id>
     <link href="https://arvincolin.github.io/bedf/"/>
     <published>2026-09-28T15:42:14.000Z</published>
@@ -183,7 +202,7 @@
 <p>9月2]]>
     </summary>
     <title>缘起</title>
-    <updated>2026-10-26T02:30:30.747Z</updated>
+    <updated>2026-10-30T15:34:58.706Z</updated>
   </entry>
   <entry>
     <author>
