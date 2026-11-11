@@ -13,7 +13,7 @@ tags:
 
 ### 蝶恋花（晏殊）
 
-![picx-010.c104ca](https://cdn.jsdelivr.net/gh/arvincolin/picx-images-hosting@main/chatu/picx-010.c104ca.webp)
+![picx-010.7d81a1](https://cdn.jsdelivr.net/gh/arvincolin/picx-images-hosting@main/chatu/picx-010.7d81a1.webp)
 
 槛菊愁烟兰泣露，罗幕轻寒，燕子双飞去。明月不谙离恨苦，斜光到晓穿朱户。
 
@@ -21,7 +21,7 @@ tags:
 
 ### 蝶恋花（柳永）
 
-![picx-011.847b18](https://cdn.jsdelivr.net/gh/arvincolin/picx-images-hosting@main/chatu/picx-011.847b18.webp)
+![picx-011.282fab](https://cdn.jsdelivr.net/gh/arvincolin/picx-images-hosting@main/chatu/picx-011.282fab.webp)
 
 伫倚危楼风细细，望极春愁，黯黯生天际。草色烟光残照里，无言谁会凭阑意。
 
@@ -29,7 +29,7 @@ tags:
 
 ### 青玉案（辛弃疾）
 
-![picx-012.edfeab](https://cdn.jsdelivr.net/gh/arvincolin/picx-images-hosting@main/chatu/picx-012.edfeab.webp)
+![picx-012.14bcb2](https://cdn.jsdelivr.net/gh/arvincolin/picx-images-hosting@main/chatu/picx-012.14bcb2.webp)
 
 东风夜放花千树。更吹落，星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。
 
