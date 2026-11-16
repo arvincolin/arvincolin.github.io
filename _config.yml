@@ -5,7 +5,7 @@
 # Site
 title: 流浪的天空
 subtitle: 
-description: 记录学习与生活，主要发表跟文学、历史、哲学相关的科普类文章。
+description: 记录学习心得与生活感悟，发表与文学、历史、哲学相关的科普类文章。
 keywords: [文学,历史,哲学,科普,学习,生活]
 author: 流云经天
 language: zh-CN
@@ -44,7 +44,6 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-auto_spacing: false                 # 自动在中英文之间添加空格，优化排版。
 syntax_highlighter: highlight.js    # 代码高亮插件(可选highlight.js / prismjs)
 highlight:
   line_number: true
