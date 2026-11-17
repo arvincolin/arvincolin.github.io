@@ -133,10 +133,8 @@ post:
     custom_badge: 筑基
 
   # Post word count
-  # Depend on Hexo Plugin: hexo-wordcount (`npm install hexo-wordcount`)
-  # See: https://github.com/willin/hexo-wordcount
   word_count:
-    wordcount: true     # Word count, one post. Option values: true | false
+    word: true           # Word count, one post. Option values: true | false
     min2read: false      # Time to read, one post. Option values: true | false
 
   # Post datetime
