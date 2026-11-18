@@ -7,23 +7,23 @@
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/base_info.html
 # ---------------------------------------------------------------------------------------
-base_info:
-  # Theme primary color
+base_info:      # 基础信息
+  # Theme primary color （主题颜色）
   primary_color: "#0066cc"
 
-  # Blog website title
+  # Blog website title （博客网站标题）
   title: 流浪的天空
 
-  # Blog website author name
+  # Blog website author name （博客作者姓名）
   author: 流云经天
 
-  # Author avatar, You can use local image path or image link
+  # Author avatar, You can use local image path or image link （作者头像）
   avatar: /images/avatar.webp
 
-  # Website LOGO, You can use local image path or image link
+  # Website LOGO, You can use local image path or image link （网站LOGO）
   logo: /images/logo.webp
 
-  # Website favicon, You can use local image path or image link
+  # Website favicon, You can use local image path or image link （网站favicon图标）
   favicon: /images/logo.webp
 
 
@@ -33,7 +33,7 @@ base_info:
 # If you want to enable a new navigation menu, you need to create a corresponding page
 # e.g. to enable categories, you need to execute `hexo new page categories`
 # Use `||` to set icon for navigation menu, e.g. `home: / || fa-solid fa-home`
-menu:
+menu:      # 头部导航菜单
   home: /                        || fa-solid fa-home
   archives: /archives            || fa-solid fa-box-archive
   categories: /categories        || fa-solid fa-layer-group
@@ -48,7 +48,7 @@ menu:
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/first_screen.html
 # ---------------------------------------------------------------------------------------
-first_screen:            # 首屏
+first_screen:      # 首屏
   enable: false  # Option values: true | false
 
   # First screen background image in light mode, You can use local image path or image link
@@ -68,7 +68,7 @@ first_screen:            # 首屏
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/social_contact.html
 # ---------------------------------------------------------------------------------------
-social_contact:
+social_contact:      # 第三方社交平台链接
   enable: false      # Option values: true | false
   links:
     # Fill in your social platform links here, e.g. `github: https://github.com/XPoet`
@@ -89,7 +89,7 @@ social_contact:
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/scroll.html
 # ---------------------------------------------------------------------------------------
-scroll:                  # 页面滚动样式
+scroll:      # 页面滚动样式
   # Show progress bar in top when page scroll
   progress_bar: true  # Option values: true | false
 
@@ -103,9 +103,9 @@ scroll:                  # 页面滚动样式
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/home.html
 # ---------------------------------------------------------------------------------------
-home:
-  # Website announcement in home page   本站于2026年9月27日晚开始筹建,2026年9月28日上午正式上线。
-  announcement:   # 公告信息
+home:      # 首页
+  # Website announcement in home page   
+  announcement:      # 公告信息 （本站于2026年9月27日晚开始筹建,2026年9月28日上午正式上线。）
 
   # Show category in home page post block
   category: true           # Option values: true | false
@@ -113,40 +113,40 @@ home:
   # Show tags in home page post block
   tag: true                # Option values: true | false
 
-  # Set the datetime type of home page post block  文章底部日期时间(更新时间 / 创建时间)
+  # Set the datetime type of home page post block 文章底部日期时间(更新时间 / 创建时间)
   post_datetime: updated  || fa-solid fa-envelope  # Option values: updated | created 
 
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/post.html
 # ---------------------------------------------------------------------------------------
-post:
+post:      # 文章内容页
   # Author badge in the post
-  author_badge:
+  author_badge:      # 作者标识（徽标/称号）
     enable: true         # Option values: true | false
 
     # If true, show Lv1, Lv2, Lv3 ...
     # If false, show custom badge
-    level_badge: false    # Option values: true | false    等级标识
+    level_badge: false    # Option values: true | false （等级标识）
 
-    # Custom badge array, You can be fill one or more item   自定义标识
+    # Custom badge array, You can be fill one or more item （自定义标识）
     custom_badge: 筑基
 
   # Post word count
-  word_count:
+  word_count:      # 文章字数统计和阅读时长
     word: true           # Word count, one post. Option values: true | false
-    min2read: false      # Time to read, one post. Option values: true | false
+    min2read: true       # Time to read, one post. Option values: true | false
 
-  # Post datetime
+  # Post datetime （时间显示格式）
   datetime_format: "YYYY-MM-DD HH:mm:ss"  # Datetime format. e.g. "YYYY-MM-DD HH:mm:ss"
 
-  # Post copyright info
-  copyright_info: false  # Option values: true | false   文章版权信息
+  # Post copyright info （文章版权信息）
+  copyright_info: false  # Option values: true | false
 
-  # Post share
-  share: false           # Option values: true | false    分享
+  # Post share （文章分享）
+  share: false           # Option values: true | false
 
-  # Reward author        打赏作者
+  # Reward author （打赏作者）
   reward:
     enable: false        # Option values: true | false
     img_link:            # Image link for the payment QR code
@@ -157,7 +157,7 @@ post:
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/code_block.html
 # ---------------------------------------------------------------------------------------
-code_block:              # 代码块工具 和 设置代码高亮主题
+code_block:      # 代码块工具 和 设置代码高亮主题
   # Toolbar include: "code copy", "code block collapse" and "code language"
   tools:
     enable: true              # Option values: true | false
@@ -168,7 +168,7 @@ code_block:              # 代码块工具 和 设置代码高亮主题
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/toc.html
 # ---------------------------------------------------------------------------------------
-toc:                     # 文章目录
+toc:      # 文章目录
   enable: true      # Option values: true | false
 
   # Automatically add list number to toc
@@ -187,7 +187,7 @@ toc:                     # 文章目录
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/website_count.html
 # ---------------------------------------------------------------------------------------
-website_count:           # 网站计数功能
+website_count:      # 网站计数功能
   # busuanzi
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
@@ -199,10 +199,8 @@ website_count:           # 网站计数功能
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/local_search.html
-# Depend on Hexo Plugin: hexo-generator-searchdb (`npm install hexo-generator-searchdb`)
-# See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
-local_search:            # 站内搜索
+local_search:      # 站内搜索
   enable: true   # Option values: true | false
   preload: true  # Preload the search data when the page loads. Option values: true | false
 
@@ -210,7 +208,7 @@ local_search:            # 站内搜索
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/comment.html
 # ---------------------------------------------------------------------------------------
-comment:                # 评论系统
+comment:      # 评论系统
   enable: false   # Option values: true | false
   use: valine     # Option values: valine | gitalk | twikoo | waline | giscus | artalk | disqus
 
@@ -240,7 +238,7 @@ comment:                # 评论系统
   twikoo:
     env_id:          # Environment ID
     region:          # Environment region, Can be null
-    version: 1.6.39  # Twikoo version, default use v1.6.39
+    version: 2.0.8   # Twikoo version, default use v1.6.39
 
   # Waline
   # See: https://github.com/walinejs/waline
@@ -248,7 +246,7 @@ comment:                # 评论系统
   waline:
     server_url:         # Server URL
     reaction: false     # Post reactions, option values: true | false
-    version: 3.3.2      # Waline version, default use v3.3.2
+    version: 3.15.2     # Waline version, default use v3.3.2
 
   # Giscus
   # See: https://github.com/giscus/giscus
@@ -278,21 +276,21 @@ comment:                # 评论系统
 # Depend on Hexo Plugin: hexo-generator-feed (`npm install hexo-generator-feed`)
 # See: https://github.com/hexojs/hexo-generator-feed
 # ---------------------------------------------------------------------------------------
-rss:                    # 订阅功能
+rss:      # RSS订阅功能
   enable: true  # Option values: true | false
 
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/lazyload.html
 # ---------------------------------------------------------------------------------------
-lazyload:               # 图片的懒加载功能
+lazyload:      # 图片的懒加载功能
   enable: true  # Option values: true | false
 
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/cdn.html
 # ---------------------------------------------------------------------------------------
-cdn:                    # CDN 加速
+cdn:      # CDN 加速
   enable: true       # Option values: true | false
   provider: jsdelivr     # Option values: cdnjs | jsdelivr | unpkg
   custom:
@@ -312,7 +310,7 @@ pjax:
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/footer.html
 # ---------------------------------------------------------------------------------------
-footer:                   # 网站底部信息展示
+footer:      # 网站底部信息展示
   since:             # The starting year of your website, Can be null
   word_count: false      # Option values: true | false
 
@@ -334,9 +332,7 @@ footer:                   # 网站底部信息展示
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/inject.html
 # ---------------------------------------------------------------------------------------
-# Docs: https:inject.html
-# ---------------------------------------------------------------------------------------
-inject:                  # 注入自定义的 CSS 和 JS 文件
+inject:      # 注入自定义的 CSS 和 JS 文件
   enable: true   # Option values: true | false
   css:
     - /css/custom.css
