@@ -135,7 +135,7 @@ post:      # 文章内容页
   # Post word count
   word_count:      # 文章字数统计和阅读时长
     word: true           # Word count, one post. Option values: true | false
-    min2read: true       # Time to read, one post. Option values: true | false
+    min2read: false      # Time to read, one post. Option values: true | false
 
   # Post datetime （时间显示格式）
   datetime_format: "YYYY-MM-DD HH:mm:ss"  # Datetime format. e.g. "YYYY-MM-DD HH:mm:ss"
@@ -161,7 +161,7 @@ code_block:      # 代码块工具 和 设置代码高亮主题
   # Toolbar include: "code copy", "code block collapse" and "code language"
   tools:
     enable: true              # Option values: true | false
-    style: mac                # Option values: default | mac
+    style: default            # Option values: default | mac
   highlight_theme: default    # Option values: default | obsidian
 
 
